@@ -128,11 +128,11 @@ Torrent + HTTP downloader. iOS torrents via KiteTorrent.
 
 <div align="center">
 
-#### The pure-Kotlin claim, measured:
+#### Almost every line I write is Kotlin
 
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuroyami&layout=compact&langs_count=6&hide_border=true&bg_color=00000000&title_color=7F52FF&text_color=808080&hide=html,css,php" alt="languages" />
+<img src="https://img.shields.io/badge/primary_language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
 
-<sub><i>Almost entirely Kotlin. The rest is Swift, for iOS interop.</i></sub>
+<sub><i>The rest is Swift — iOS interop, where the OS insists.</i></sub>
 
 </div>
 
