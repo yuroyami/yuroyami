@@ -46,46 +46,64 @@ Read · view · render · edit · create PDFs. One engine — no PDFKit, PdfRend
 </td>
 <td width="50%" valign="top">
 
-### [KiteTorrent](https://github.com/yuroyami/KiteTorrent)
-Port of libtorrent 2.0 — download, seed, magnets. Runs **on iOS**, where libtorrent never went.
-
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"> <img src="https://img.shields.io/badge/iOS-000?style=flat-square&logo=apple&logoColor=white"> <img src="https://img.shields.io/badge/JVM-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [KiteQR](https://github.com/yuroyami/KiteQR)
-Full ZXing core port. Every symbology, CJK/Shift_JIS ECI, SVG/PNG out, Compose bindings.
-
-<img src="https://img.shields.io/badge/all%20targets-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
-
-</td>
-<td width="50%" valign="top">
-
-### [KiteArchive](https://github.com/yuroyami/KiteArchive)
-DEFLATE · gzip · zlib · tar · checksums. Stdlib-only core, kotlinx-io adapter.
-
-<img src="https://img.shields.io/badge/all%20targets-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [KiteCodec](https://github.com/yuroyami/KiteCodec)
-One coroutine-first API for audio + video — decode, encode, transcode, filter — from common Kotlin, backed by FFmpeg.
-
-<img src="https://img.shields.io/badge/iOS-000?style=flat-square&logo=apple&logoColor=white"> <img src="https://img.shields.io/badge/Desktop-2b2b2b?style=flat-square&logo=linux&logoColor=white"> <img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white">
-
-</td>
-<td width="50%" valign="top">
-
 ### [kmp-ssot](https://github.com/yuroyami/kmp-ssot) &nbsp;🧰
 Gradle plugin — declare `appName` / `version` / `bundleId` once, propagate to Android + iOS.
 
 <img src="https://img.shields.io/badge/Gradle%20plugin-02303A?style=flat-square&logo=gradle&logoColor=white">
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### KiteTorrent
+Port of libtorrent 2.0 — download, seed, magnets. Runs **on iOS**, where libtorrent never went.
+
+<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
+
+</td>
+<td width="50%" valign="top">
+
+### KiteQR
+Full ZXing core port. Every symbology, CJK/Shift_JIS ECI, SVG/PNG out, Compose bindings.
+
+<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### KiteArchive
+DEFLATE · gzip · zlib · tar · checksums. Stdlib-only core, kotlinx-io adapter.
+
+<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
+
+</td>
+<td width="50%" valign="top">
+
+### KiteCodec
+One coroutine-first API for audio + video — decode, encode, transcode, filter — from common Kotlin, backed by FFmpeg.
+
+<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### KiteCore
+Runtime gap-closer for KMP — real IO dispatchers + inline web-worker offload.
+
+<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
+
+</td>
+<td width="50%" valign="top">
+
+### Kite3D
+A pure-Kotlin 3D engine for KMP, rising from its math core.
+
+<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
 </tr>
@@ -115,10 +133,10 @@ Network ping / latency tester.
 </td>
 <td width="33%" valign="top" align="center">
 
-### [Luddy](https://github.com/yuroyami/Luddy)
+### Luddy
 Torrent + HTTP downloader. iOS torrents via KiteTorrent.
 
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"> <img src="https://img.shields.io/badge/iOS-000?style=flat-square&logo=apple&logoColor=white">
+<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
 </tr>
