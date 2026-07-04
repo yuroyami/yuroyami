@@ -33,7 +33,7 @@ A Syncplay client for **Android + iOS** — watch video in sync with friends, 10
 
 ## 🪁 &nbsp;Kite — the work I'm proudest of
 
-> These are the libraries I keep coming back to. Each one does something from common Kotlin that the ecosystem swore meant dropping to C, Java, or a platform SDK. Most are pure ports with nothing native underneath; where a native core is unavoidable, Kite hides it behind the same Kotlin API. I build them because I'd rather trust Kotlin than route around it — and every time, it holds. One name, one belief: **Kotlin is enough.**
+> I like porting things to Kotlin that everyone assumes need C or Java underneath. Most Kite libraries are pure common Kotlin — no JNI, no bundled binaries — which means they can compile for every target Kotlin supports: Android, JVM, iOS, macOS, Linux, Windows, JS and Wasm. Where a native core genuinely can't be avoided (FFmpeg, for codecs), the Kotlin API stays the same and the binary sits behind it.
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ A Syncplay client for **Android + iOS** — watch video in sync with friends, 10
 ### [KitePDF](https://github.com/yuroyami/KitePDF)
 Read · view · render · edit · create PDFs. One engine — no PDFKit, PdfRenderer, or pdf.js.
 
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"> <img src="https://img.shields.io/badge/iOS-000?style=flat-square&logo=apple&logoColor=white"> <img src="https://img.shields.io/badge/Web-F7DF1E?style=flat-square&logo=webassembly&logoColor=black"> <img src="https://img.shields.io/badge/JVM-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
+<img src="https://img.shields.io/badge/Android%20%C2%B7%20iOS%20%C2%B7%20Web%20%C2%B7%20JVM-100%25%20Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
 
 </td>
 <td width="50%" valign="top">
@@ -58,7 +58,7 @@ Gradle plugin — declare `appName` / `version` / `bundleId` once, propagate to 
 <td width="50%" valign="top">
 
 ### KiteTorrent
-Port of libtorrent 2.0 — download, seed, magnets. Runs **on iOS**, where libtorrent never went.
+Port of libtorrent 2.0 — download, seed, magnet links. iOS included.
 
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
@@ -66,7 +66,7 @@ Port of libtorrent 2.0 — download, seed, magnets. Runs **on iOS**, where libto
 <td width="50%" valign="top">
 
 ### KiteQR
-Full ZXing core port. Every symbology, CJK/Shift_JIS ECI, SVG/PNG out, Compose bindings.
+Full ZXing core port. Every symbology, CJK/Shift_JIS ECI, SVG/PNG output, Compose bindings.
 
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
@@ -94,7 +94,7 @@ One coroutine-first API for audio + video — decode, encode, transcode, filter 
 <td width="50%" valign="top">
 
 ### KiteCore
-Runtime gap-closer for KMP — real IO dispatchers + inline web-worker offload.
+The runtime pieces KMP doesn't ship: a real IO dispatcher on every target, web-worker offload on JS and Wasm.
 
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
@@ -102,7 +102,7 @@ Runtime gap-closer for KMP — real IO dispatchers + inline web-worker offload.
 <td width="50%" valign="top">
 
 ### Kite3D
-A pure-Kotlin 3D engine for KMP, rising from its math core.
+A 3D engine in pure Kotlin. Pre-alpha — the math layer works, rendering comes next.
 
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
@@ -151,7 +151,7 @@ Torrent + HTTP downloader. iOS torrents via KiteTorrent.
 
 <img src="https://img.shields.io/badge/primary_language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
 
-<sub><i>The rest is Swift — iOS interop, where the OS insists.</i></sub>
+<sub><i>The rest is Swift, for the iOS entry points.</i></sub>
 
 </div>
 
