@@ -1,12 +1,13 @@
 <!-- ══════════════════════  HEADER  ══════════════════════ -->
 
-<a href="#">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7F52FF,100:C724B1&height=210&section=header&text=yuroyami&fontSize=66&fontColor=ffffff&fontAlignY=38&desc=Kotlin%20for%20everything&descSize=17&descAlignY=60" alt="yuroyami">
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img width="100%" src="assets/hero-light.svg" alt="yuroyami — Kotlin for everything">
+</picture>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=800&color=7F52FF&center=true&vCenter=true&width=720&lines=Java+ran+so+Kotlin+could+fly.;%F0%9F%AA%81+Kite+%E2%80%94+PDF%2C+BitTorrent%2C+QR+and+archives%2C+in+pure+Kotlin;%E2%9C%8C%EF%B8%8F+Jetzy+%C2%B7+Pingy+%C2%B7+Luddy+%E2%80%94+one+Kotlin+source%2C+Android+%2B+iOS" alt="what I build" />
+<img src="assets/taglines.svg" width="100%" alt="Java ran so Kotlin could fly." />
 
 <br>
 
@@ -165,4 +166,4 @@ Torrent + HTTP downloader. iOS torrents via KiteTorrent.
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:C724B1,100:7F52FF&height=120&section=footer" alt="">
+<img width="100%" src="assets/footer.svg" alt="">

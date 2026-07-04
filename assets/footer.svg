@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" role="img" aria-label="">
+  <defs>
+    <linearGradient id="fkG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C724B1"/>
+      <stop offset="1" stop-color="#7F52FF"/>
+    </linearGradient>
+    <linearGradient id="fkG2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7F52FF"/>
+      <stop offset="1" stop-color="#C724B1"/>
+    </linearGradient>
+    <style>
+      .fkKite{transform-box:fill-box;transform-origin:center;animation:fkBob 4.5s ease-in-out infinite}
+      .fk2{animation-delay:.8s}
+      .fk3{animation-delay:1.6s}
+      @keyframes fkBob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-7px) rotate(3deg)}}
+    </style>
+  </defs>
+  <path d="M0,96 C160,74 320,110 480,96 C640,82 800,112 960,98 C1080,88 1150,94 1200,92 L1200,140 L0,140 Z" fill="url(#fkG2)" opacity="0.35"/>
+  <g class="fkKite">
+    <path d="M300 52 C 292 66, 284 72, 272 80" stroke="#9a7bff" stroke-width="1.6" fill="none" opacity="0.8"/>
+    <polygon points="300,24 315,40 300,56 285,40" fill="url(#fkG)"/>
+    <path d="M300 24 L300 56 M285 40 L315 40" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.2"/>
+  </g>
+  <g class="fkKite fk2">
+    <path d="M610 44 C 602 58, 594 64, 582 72" stroke="#9a7bff" stroke-width="1.6" fill="none" opacity="0.8"/>
+    <polygon points="610,16 625,32 610,48 595,32" fill="url(#fkG2)"/>
+    <path d="M610 16 L610 48 M595 32 L625 32" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.2"/>
+  </g>
+  <g class="fkKite fk3">
+    <path d="M920 56 C 912 70, 904 76, 892 84" stroke="#9a7bff" stroke-width="1.6" fill="none" opacity="0.8"/>
+    <polygon points="920,28 935,44 920,60 905,44" fill="url(#fkG)"/>
+    <path d="M920 28 L920 60 M905 44 L935 44" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.2"/>
+  </g>
+  <path d="M0,104 C150,80 300,124 450,106 C600,88 750,126 900,110 C1050,96 1150,104 1200,100 L1200,140 L0,140 Z" fill="url(#fkG)" opacity="0.95"/>
+</svg>

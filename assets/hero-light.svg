@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 270" role="img" aria-label="yuroyami — Kotlin for everything">
+  <defs>
+    <linearGradient id="hlSky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#faf7ff"/>
+      <stop offset="0.55" stop-color="#f3ebff"/>
+      <stop offset="1" stop-color="#fdeffa"/>
+    </linearGradient>
+    <linearGradient id="hlKite" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7F52FF"/>
+      <stop offset="0.6" stop-color="#C724B1"/>
+      <stop offset="1" stop-color="#E44857"/>
+    </linearGradient>
+    <radialGradient id="hlGlow" cx="0.74" cy="0.32" r="0.55">
+      <stop offset="0" stop-color="#7F52FF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#7F52FF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="hlClip"><rect width="1200" height="270" rx="14"/></clipPath>
+    <style>
+      .hlStar{fill:#8f6bff}
+      .hlTw1{animation:hlTw 3.2s ease-in-out infinite}
+      .hlTw2{animation:hlTw 4.1s ease-in-out 1.1s infinite}
+      .hlTw3{animation:hlTw 5s ease-in-out 2.2s infinite}
+      @keyframes hlTw{0%,100%{opacity:.15}50%{opacity:.7}}
+      .hlKiteG{transform-box:fill-box;transform-origin:center;animation:hlBob 6s ease-in-out infinite}
+      @keyframes hlBob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-14px) rotate(3deg)}}
+      .hlBow{transform-box:fill-box;transform-origin:center;animation:hlSway 2.8s ease-in-out infinite}
+      .hlB2{animation-delay:.5s}.hlB3{animation-delay:1s}
+      @keyframes hlSway{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(16deg)}}
+      .hlName{font:800 64px -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;fill:#1f2328;letter-spacing:-1.5px}
+      .hlSub{font:600 20px ui-monospace,'SF Mono',Menlo,Consolas,monospace;fill:#6b3ffd}
+    </style>
+  </defs>
+  <g clip-path="url(#hlClip)">
+    <rect width="1200" height="270" fill="url(#hlSky)"/>
+    <rect width="1200" height="270" fill="url(#hlGlow)"/>
+    <g>
+      <circle class="hlStar hlTw1" cx="140" cy="40" r="1.6"/>
+      <circle class="hlStar hlTw2" cx="260" cy="64" r="1.2"/>
+      <circle class="hlStar hlTw3" cx="365" cy="38" r="1.4"/>
+      <circle class="hlStar hlTw1" cx="485" cy="58" r="1.2"/>
+      <circle class="hlStar hlTw2" cx="585" cy="30" r="1.5"/>
+      <circle class="hlStar hlTw3" cx="660" cy="90" r="1.2"/>
+      <circle class="hlStar hlTw1" cx="720" cy="48" r="1.6"/>
+      <circle class="hlStar hlTw2" cx="1050" cy="60" r="1.5"/>
+      <circle class="hlStar hlTw1" cx="1120" cy="120" r="1.2"/>
+      <circle class="hlStar hlTw3" cx="1160" cy="42" r="1.4"/>
+      <circle class="hlStar hlTw2" cx="1030" cy="190" r="1.2"/>
+      <circle class="hlStar hlTw3" cx="95" cy="205" r="1.2"/>
+      <circle class="hlStar hlTw1" cx="215" cy="232" r="1.4"/>
+      <circle class="hlStar hlTw2" cx="420" cy="215" r="1.2"/>
+      <circle class="hlStar hlTw3" cx="560" cy="236" r="1.3"/>
+      <circle class="hlStar hlTw1" cx="760" cy="225" r="1.2"/>
+      <circle class="hlStar hlTw3" cx="1105" cy="225" r="1.4"/>
+      <circle class="hlStar hlTw2" cx="58" cy="105" r="1.3"/>
+    </g>
+    <g class="hlKiteG">
+      <path d="M880 155 C 842 198, 788 214, 706 240" stroke="#7F52FF" stroke-width="2.5" fill="none" opacity="0.7"/>
+      <polygon class="hlBow" points="845,186 851,192 845,198 839,192" fill="#C724B1"/>
+      <polygon class="hlBow hlB2" points="800,206 806,212 800,218 794,212" fill="#7F52FF"/>
+      <polygon class="hlBow hlB3" points="748,224 754,230 748,236 742,230" fill="#E44857"/>
+      <polygon points="880,55 928,105 880,155 832,105" fill="url(#hlKite)"/>
+      <path d="M880 55 L880 155 M832 105 L928 105" stroke="#ffffff" stroke-opacity="0.45" stroke-width="2"/>
+      <polygon points="880,55 928,105 880,105" fill="#ffffff" opacity="0.2"/>
+    </g>
+    <text x="90" y="132" class="hlName">yuroyami</text>
+    <text x="92" y="170" class="hlSub">Kotlin for everything</text>
+  </g>
+</svg>

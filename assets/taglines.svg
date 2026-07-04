@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 44" role="img" aria-label="Java ran so Kotlin could fly.">
+  <defs>
+    <style>
+      .tlL{font:600 19px ui-monospace,'SF Mono',Menlo,Consolas,monospace;fill:#7F52FF;opacity:0;animation:tlCyc 10.5s linear infinite}
+      .tl2{animation-delay:3.5s}
+      .tl3{animation-delay:7s}
+      @keyframes tlCyc{0%{opacity:0;transform:translateY(6px)}3%{opacity:1;transform:translateY(0)}30%{opacity:1;transform:translateY(0)}33%{opacity:0;transform:translateY(-6px)}100%{opacity:0}}
+    </style>
+  </defs>
+  <text class="tlL" x="490" y="29" text-anchor="middle">Java ran so Kotlin could fly.</text>
+  <text class="tlL tl2" x="490" y="29" text-anchor="middle">🪁 Kite — PDF, BitTorrent, QR and archives, in pure Kotlin</text>
+  <text class="tlL tl3" x="490" y="29" text-anchor="middle">✌️ Jetzy · Pingy · Luddy — one Kotlin source, Android + iOS</text>
+</svg>
