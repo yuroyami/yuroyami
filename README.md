@@ -47,22 +47,14 @@ Read · view · render · edit · create PDFs. One engine — no PDFKit, PdfRend
 </td>
 <td width="50%" valign="top">
 
-### [kmp-ssot](https://github.com/yuroyami/kmp-ssot) &nbsp;🧰
-Gradle plugin — declare `appName` / `version` / `bundleId` once, propagate to Android + iOS.
-
-<img src="https://img.shields.io/badge/Gradle%20plugin-02303A?style=flat-square&logo=gradle&logoColor=white">
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 ### KiteTorrent
 Port of libtorrent 2.0 — download, seed, magnet links. iOS included.
 
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### KiteQR
@@ -71,8 +63,6 @@ Full ZXing core port. Every symbology, CJK/Shift_JIS ECI, SVG/PNG output, Compos
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### KiteArchive
@@ -81,6 +71,8 @@ DEFLATE · gzip · zlib · tar · checksums. Stdlib-only core, kotlinx-io adapte
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### KiteCodec
@@ -89,8 +81,6 @@ One coroutine-first API for audio + video — decode, encode, transcode, filter 
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### KiteCore
@@ -99,12 +89,37 @@ The runtime pieces KMP doesn't ship: a real IO dispatcher on every target, web-w
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### Kite3D
 A 3D engine in pure Kotlin. Pre-alpha — the math layer works, rendering comes next.
 
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
+
+</td>
+<td width="50%" valign="top">
+
+</td>
+</tr>
+</table>
+
+<!-- ══════════════════════  PLUGINS  ══════════════════════ -->
+
+## 🔌 &nbsp;Plugins
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [kmp-ssot](https://github.com/yuroyami/kmp-ssot)
+Gradle plugin — declare `appName` / `version` / `bundleId` once, propagate to Android + iOS.
+
+<img src="https://img.shields.io/badge/Gradle%20plugin-02303A?style=flat-square&logo=gradle&logoColor=white">
+
+</td>
+<td width="50%" valign="top">
 
 </td>
 </tr>
