@@ -40,11 +40,21 @@ A Syncplay client for **Android + iOS** — watch video in sync with friends, 10
 <td width="50%" valign="top">
 
 ### [KitePDF](https://github.com/yuroyami/KitePDF)
-Read · view · render · edit · create PDFs. One engine — no PDFKit, PdfRenderer, or pdf.js.
+Read, view, render, edit and create PDFs (and read EPUBs) from Kotlin Multiplatform. One engine, 100% pure Kotlin — no JNI, no native PDF library, no expect/actual. Compose Multiplatform ready.
 
 <img src="https://img.shields.io/badge/Android%20%C2%B7%20iOS%20%C2%B7%20Web%20%C2%B7%20JVM-100%25%20Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
 
 </td>
+<td width="50%" valign="top">
+
+### [KiteCore](https://github.com/yuroyami/KiteCore)
+A lightweight Kotlin Multiplatform library of 500+ daily-use APIs missing from the stdlib. Every target, one dependency.
+
+<img src="https://img.shields.io/badge/every%20KMP%20target-100%25%20Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
+
+</td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### KiteTorrent
@@ -53,8 +63,6 @@ Port of libtorrent 2.0 — download, seed, magnet links. iOS included.
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### KiteQR
@@ -63,6 +71,8 @@ Full ZXing core port. Every symbology, CJK/Shift_JIS ECI, SVG/PNG output, Compos
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### KiteArchive
@@ -71,20 +81,10 @@ DEFLATE · gzip · zlib · tar · checksums. Stdlib-only core, kotlinx-io adapte
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### KiteCodec
 One coroutine-first API for audio + video — decode, encode, transcode, filter — from common Kotlin, backed by FFmpeg.
-
-<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
-
-</td>
-<td width="50%" valign="top">
-
-### KiteCore
-The runtime pieces KMP doesn't ship: a real IO dispatcher on every target, web-worker offload on JS and Wasm.
 
 <img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
 
