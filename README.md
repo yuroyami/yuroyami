@@ -23,7 +23,7 @@
 
 ### 📱 [syncplay-mobile](https://github.com/yuroyami/syncplay-mobile) &nbsp;<img src="https://img.shields.io/github/stars/yuroyami/syncplay-mobile?style=flat-square&color=7F52FF&labelColor=1a1a2e" align="right">
 
-A Syncplay client for **Android + iOS** — watch video in sync with friends, 100% Kotlin & Compose. The codebase the kmp-ssot pattern grew out of.
+A Syncplay client for **Android + iOS** — watch video in sync with friends, 100% Kotlin & Compose. The codebase the KiteSSOT pattern grew out of.
 
 <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"> <img src="https://img.shields.io/badge/iOS-000000?style=flat-square&logo=apple&logoColor=white"> <img src="https://img.shields.io/badge/Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white">
 
@@ -101,25 +101,10 @@ A 3D engine in pure Kotlin. Pre-alpha — the math layer works, rendering comes 
 </td>
 <td width="50%" valign="top">
 
-</td>
-</tr>
-</table>
+### [KiteSSOT](https://github.com/yuroyami/KiteSSOT)
+Gradle plugin — declare your app's identity once, propagate to Android + iOS. Formerly kmp-ssot.
 
-<!-- ══════════════════════  PLUGINS  ══════════════════════ -->
-
-## 🔌 &nbsp;Plugins
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [kmp-ssot](https://github.com/yuroyami/kmp-ssot)
-Gradle plugin — declare `appName` / `version` / `bundleId` once, propagate to Android + iOS.
-
-<img src="https://img.shields.io/badge/Gradle%20plugin-02303A?style=flat-square&logo=gradle&logoColor=white">
-
-</td>
-<td width="50%" valign="top">
+<img src="https://img.shields.io/badge/Gradle%20plugin-02303A?style=flat-square&logo=gradle&logoColor=white"> <img src="https://img.shields.io/gradle-plugin-portal/v/io.github.yuroyami.kitessot?style=flat-square&label=portal">
 
 </td>
 </tr>
