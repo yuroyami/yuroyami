@@ -110,9 +110,9 @@ Gradle plugin — declare your app's identity once, propagate to Android + iOS. 
 </tr>
 </table>
 
-<!-- ══════════════════════  "y" APPS  ══════════════════════ -->
+<!-- ══════════════════════  APPS  ══════════════════════ -->
 
-## ✌️ &nbsp;the "y" apps — because my name has two
+## 📲 &nbsp;Apps — one Kotlin codebase, Android + iOS
 
 <table>
 <tr>
