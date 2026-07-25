@@ -33,28 +33,6 @@ binary.
 | **[KiteTorrent](https://github.com/yuroyami/KiteTorrent)** | Download and seed torrents. DHT, µTP, magnet links, encryption and BitTorrent v2. | 5 | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | [Guide](https://yuroyami.github.io/KiteTorrent/) |
 | **[KiteCodec](https://github.com/yuroyami/KiteCodec)** | Demux, decode, filter, encode and mux video and audio through FFmpeg. | Native | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | [docs/](https://github.com/yuroyami/KiteCodec/tree/main/docs) |
 
-**Targets** counts the Kotlin Multiplatform targets each library builds for.
-**Source only** means public code and docs, nothing published yet.
-
-### Install
-
-Everything is under `io.github.yuroyami`.
-
-```kotlin
-dependencies {
-    implementation("io.github.yuroyami:kitepdf:0.2.0")
-    implementation("io.github.yuroyami:kiteqr:0.1.0")
-}
-```
-
-KiteSSOT is a Gradle plugin, so it goes in the root `plugins` block.
-
-```kotlin
-plugins {
-    id("io.github.yuroyami.kitessot") version "2.0.2"
-}
-```
-
 <!-- ══════════════════════  APPS  ══════════════════════ -->
 
 ## 📲 &nbsp;Apps
