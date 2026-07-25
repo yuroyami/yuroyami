@@ -2,158 +2,80 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img width="100%" src="assets/hero-light.svg" alt="yuroyami — Kotlin for everything">
+  <img width="100%" src="assets/hero-light.svg" alt="yuroyami. Kotlin for everything.">
 </picture>
 
 <div align="center">
 
-<img src="assets/taglines.svg" width="100%" alt="Java ran so Kotlin could fly." />
-
-<br>
-
-<img src="https://skillicons.dev/icons?i=kotlin,androidstudio,gradle,swift,js&theme=dark" alt="stack" />
+<img src="assets/taglines.svg" width="100%" alt="Kite: PDFs, barcodes, images, archives, torrents and 3D maths in pure Kotlin" />
 
 </div>
 
-<!-- ══════════════════════  FEATURED  ══════════════════════ -->
+<!-- ══════════════════════  INTRO  ══════════════════════ -->
 
-<h3 align="center">⭐ Featured</h3>
+I write Kotlin Multiplatform libraries for work that normally needs a native
+library underneath. PDFs, barcodes, image codecs, compression, BitTorrent and 3D
+maths all run as `commonMain` Kotlin. There is no JNI and no bundled native
+binary, so adding one is a single Gradle line on every platform. KiteCodec is
+the exception: video work needs FFmpeg, so it binds to FFmpeg directly.
 
-<table align="center"><tr><td width="620" valign="top">
+Nine of these make up **Kite**. Six are on Maven Central, one is on the Gradle
+Plugin Portal, and two are still source only.
 
-### 📱 [syncplay-mobile](https://github.com/yuroyami/syncplay-mobile) &nbsp;<img src="https://img.shields.io/github/stars/yuroyami/syncplay-mobile?style=flat-square&color=7F52FF&labelColor=1a1a2e" align="right">
+<!-- ══════════════════════  KITE  ══════════════════════ -->
 
-A Syncplay client for **Android + iOS** — watch video in sync with friends, 100% Kotlin & Compose. The codebase the KiteSSOT pattern grew out of.
+## 🪁 &nbsp;Kite
 
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"> <img src="https://img.shields.io/badge/iOS-000000?style=flat-square&logo=apple&logoColor=white"> <img src="https://img.shields.io/badge/Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white">
+| Library | What it does | Targets | Latest | Docs |
+| :--- | :--- | :---: | :--- | :---: |
+| **[KitePDF](https://github.com/yuroyami/KitePDF)** | Read, create, edit and render PDFs. Also reads EPUB 2 and 3. | 22 | [![kitepdf](https://img.shields.io/maven-central/v/io.github.yuroyami/kitepdf?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitepdf) | [Guide](https://yuroyami.github.io/KitePDF/) |
+| **[KiteQR](https://github.com/yuroyami/KiteQR)** | Scan and generate QR, Aztec, Data Matrix, PDF417 and the 1D barcode families. | 22 | [![kiteqr](https://img.shields.io/maven-central/v/io.github.yuroyami/kiteqr?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kiteqr) | [Guide](https://yuroyami.github.io/KiteQR/) |
+| **[KiteImage](https://github.com/yuroyami/KiteImage)** | Decode and encode PNG, JPEG, GIF, BMP, TIFF, JPEG 2000 and lossless WebP. | 22 | [![kiteimage](https://img.shields.io/maven-central/v/io.github.yuroyami/kiteimage?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kiteimage) | [Guide](https://yuroyami.github.io/KiteImage/) |
+| **[Kite3D](https://github.com/yuroyami/Kite3D)** | Vectors, matrices, quaternions, bounding volumes and colour. Maths only. | 22 | [![kite3d](https://img.shields.io/maven-central/v/io.github.yuroyami/kite3d?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kite3d) | [Guide](https://yuroyami.github.io/Kite3D/) |
+| **[KiteCore](https://github.com/yuroyami/KiteCore)** | The small things `commonMain` leaves out: an IO dispatcher, weak references, platform identity. | 8 | [![kitecore](https://img.shields.io/maven-central/v/io.github.yuroyami/kitecore?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitecore) | [Guide](https://yuroyami.github.io/KiteCore/) |
+| **[KiteArchive](https://github.com/yuroyami/KiteArchive)** | DEFLATE, gzip, zlib and LZ4. Reads and writes ZIP and ZIP64, reads TAR, ar and cpio. | 6 | [![kitearchive](https://img.shields.io/maven-central/v/io.github.yuroyami/kitearchive?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitearchive) | [Guide](https://yuroyami.github.io/KiteArchive/) |
+| **[KiteSSOT](https://github.com/yuroyami/KiteSSOT)** | Gradle plugin. Declare app name, version and bundle ID once, then it writes the Android and iOS copies. | Gradle | [![kitessot](https://img.shields.io/gradle-plugin-portal/v/io.github.yuroyami.kitessot?style=flat-square&label=&color=02303A)](https://plugins.gradle.org/plugin/io.github.yuroyami.kitessot) | [Guide](https://yuroyami.github.io/KiteSSOT/) |
+| **[KiteTorrent](https://github.com/yuroyami/KiteTorrent)** | Download and seed torrents. DHT, µTP, magnet links, encryption and BitTorrent v2. | 5 | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | [Guide](https://yuroyami.github.io/KiteTorrent/) |
+| **[KiteCodec](https://github.com/yuroyami/KiteCodec)** | Demux, decode, filter, encode and mux video and audio through FFmpeg. | Native | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | [docs/](https://github.com/yuroyami/KiteCodec/tree/main/docs) |
 
-</td></tr></table>
+**Targets** is how many Kotlin Multiplatform targets the library builds for. The
+largest set covers Android, JVM, every Apple platform, Linux, Windows, JS and
+both Wasm targets. **Source only** means the code and the documentation are
+public, but nothing is published yet.
 
-<!-- ══════════════════════  KITE LINEAGE  ══════════════════════ -->
+### Install
 
-## 🪁 &nbsp;Kite — the work I'm proudest of
+Every library sits under `io.github.yuroyami`, so one line adds one library.
 
-> I like porting things to Kotlin that everyone assumes need C or Java underneath. Most Kite libraries are pure common Kotlin — no JNI, no bundled binaries — which means they can compile for every target Kotlin supports: Android, JVM, iOS, macOS, Linux, Windows, JS and Wasm. Where a native core genuinely can't be avoided (FFmpeg, for codecs), the Kotlin API stays the same and the binary sits behind it.
+```kotlin
+dependencies {
+    implementation("io.github.yuroyami:kitepdf:0.2.0")
+    implementation("io.github.yuroyami:kiteqr:0.1.0")
+}
+```
 
-<table>
-<tr>
-<td width="50%" valign="top">
+KiteSSOT is a Gradle plugin, so it goes in the root `plugins` block instead.
 
-### [KitePDF](https://github.com/yuroyami/KitePDF)
-Read, view, render, edit and create PDFs (and read EPUBs) from Kotlin Multiplatform. One engine, 100% pure Kotlin — no JNI, no native PDF library, no expect/actual. Compose Multiplatform ready.
-
-<img src="https://img.shields.io/badge/Android%20%C2%B7%20iOS%20%C2%B7%20Web%20%C2%B7%20JVM-100%25%20Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
-
-</td>
-<td width="50%" valign="top">
-
-### [KiteCore](https://github.com/yuroyami/KiteCore)
-A lightweight Kotlin Multiplatform library of 500+ daily-use APIs missing from the stdlib. Every target, one dependency.
-
-<img src="https://img.shields.io/badge/every%20KMP%20target-100%25%20Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### KiteTorrent
-Port of libtorrent 2.0 — download, seed, magnet links. iOS included.
-
-<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
-
-</td>
-<td width="50%" valign="top">
-
-### KiteQR
-Full ZXing core port. Every symbology, CJK/Shift_JIS ECI, SVG/PNG output, Compose bindings.
-
-<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### KiteArchive
-DEFLATE · gzip · zlib · tar · checksums. Stdlib-only core, kotlinx-io adapter.
-
-<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
-
-</td>
-<td width="50%" valign="top">
-
-### KiteCodec
-One coroutine-first API for audio + video — decode, encode, transcode, filter — from common Kotlin, backed by FFmpeg.
-
-<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### Kite3D
-A 3D engine in pure Kotlin. Pre-alpha — the math layer works, rendering comes next.
-
-<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
-
-</td>
-<td width="50%" valign="top">
-
-### [KiteSSOT](https://github.com/yuroyami/KiteSSOT)
-Gradle plugin — declare your app's identity once, propagate to Android + iOS. Formerly kmp-ssot.
-
-<img src="https://img.shields.io/badge/Gradle%20plugin-02303A?style=flat-square&logo=gradle&logoColor=white"> <img src="https://img.shields.io/gradle-plugin-portal/v/io.github.yuroyami.kitessot?style=flat-square&label=portal">
-
-</td>
-</tr>
-</table>
+```kotlin
+plugins {
+    id("io.github.yuroyami.kitessot") version "2.0.2"
+}
+```
 
 <!-- ══════════════════════  APPS  ══════════════════════ -->
 
-## 📲 &nbsp;Apps — one Kotlin codebase, Android + iOS
+## 📲 &nbsp;Apps
 
-<table>
-<tr>
-<td width="33%" valign="top" align="center">
+One Kotlin codebase, Android and iOS, Compose Multiplatform throughout.
 
-### [Jetzy](https://github.com/yuroyami/jetzy)
-Cross-platform file transfer.
+| App | What it is | |
+| :--- | :--- | :--- |
+| **[Syncplay Mobile](https://github.com/yuroyami/syncplay-mobile)** | Watch video in sync with friends. Works with Syncplay on desktop. | [![stars](https://img.shields.io/github/stars/yuroyami/syncplay-mobile?style=flat-square&label=&color=7F52FF)](https://github.com/yuroyami/syncplay-mobile) |
+| **[Pingy](https://github.com/yuroyami/PINGY)** | Network ping and latency tester. | <img src="https://img.shields.io/badge/Android%20%C2%B7%20iOS-3DDC84?style=flat-square" alt="Android and iOS"> |
+| **[DuelistLP](https://github.com/yuroyami/DuelistLP)** | Life point counter for two-player Yu-Gi-Oh. | <img src="https://img.shields.io/badge/Android%20%C2%B7%20iOS-3DDC84?style=flat-square" alt="Android and iOS"> |
 
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"> <img src="https://img.shields.io/badge/iOS-000?style=flat-square&logo=apple&logoColor=white">
-
-</td>
-<td width="33%" valign="top" align="center">
-
-### [Pingy](https://github.com/yuroyami/PINGY)
-Network ping / latency tester.
-
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"> <img src="https://img.shields.io/badge/iOS-000?style=flat-square&logo=apple&logoColor=white">
-
-</td>
-<td width="33%" valign="top" align="center">
-
-### Luddy
-Torrent + HTTP downloader. iOS torrents via KiteTorrent.
-
-<img src="https://img.shields.io/badge/%F0%9F%9A%A7%20COMING%20SOON-C724B1?style=for-the-badge" alt="coming soon">
-
-</td>
-</tr>
-</table>
-
-<!-- ══════════════════════  THE FLEX  ══════════════════════ -->
-
-<div align="center">
-
-#### Almost every line I write is Kotlin
-
-<img src="https://img.shields.io/badge/primary_language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
-
-<sub><i>The rest is Swift, for the iOS entry points.</i></sub>
-
-</div>
+Peerora, a file transfer app, and Luddy, a torrent and HTTP downloader built on
+KiteTorrent, are not public yet.
 
 <!-- ══════════════════════  CONTACT  ══════════════════════ -->
 
@@ -161,8 +83,7 @@ Torrent + HTTP downloader. iOS torrents via KiteTorrent.
 
 <br>
 
-<a href="https://github.com/yuroyami/my-portfolio"><img src="https://img.shields.io/badge/Portfolio-C724B1?style=for-the-badge&logo=readme&logoColor=white"></a>
-<a href="mailto:evongintoki@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
+<a href="mailto:evongintoki@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 
 </div>
 
