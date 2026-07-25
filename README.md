@@ -13,14 +13,9 @@
 
 <!-- ══════════════════════  INTRO  ══════════════════════ -->
 
-I write Kotlin Multiplatform libraries for work that normally needs a native
-library underneath. PDFs, barcodes, image codecs, compression, BitTorrent and 3D
-maths all run as `commonMain` Kotlin. There is no JNI and no bundled native
-binary, so adding one is a single Gradle line on every platform. KiteCodec is
-the exception: video work needs FFmpeg, so it binds to FFmpeg directly.
-
-Nine of these make up **Kite**. Six are on Maven Central, one is on the Gradle
-Plugin Portal, and two are still source only.
+I write Kotlin Multiplatform libraries the ecosystem does not have yet, and apps
+that use them. Almost all of it is pure `commonMain` Kotlin: no JNI, no native
+binary.
 
 <!-- ══════════════════════  KITE  ══════════════════════ -->
 
@@ -38,14 +33,12 @@ Plugin Portal, and two are still source only.
 | **[KiteTorrent](https://github.com/yuroyami/KiteTorrent)** | Download and seed torrents. DHT, µTP, magnet links, encryption and BitTorrent v2. | 5 | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | [Guide](https://yuroyami.github.io/KiteTorrent/) |
 | **[KiteCodec](https://github.com/yuroyami/KiteCodec)** | Demux, decode, filter, encode and mux video and audio through FFmpeg. | Native | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | [docs/](https://github.com/yuroyami/KiteCodec/tree/main/docs) |
 
-**Targets** is how many Kotlin Multiplatform targets the library builds for. The
-largest set covers Android, JVM, every Apple platform, Linux, Windows, JS and
-both Wasm targets. **Source only** means the code and the documentation are
-public, but nothing is published yet.
+**Targets** counts the Kotlin Multiplatform targets each library builds for.
+**Source only** means public code and docs, nothing published yet.
 
 ### Install
 
-Every library sits under `io.github.yuroyami`, so one line adds one library.
+Everything is under `io.github.yuroyami`.
 
 ```kotlin
 dependencies {
@@ -54,7 +47,7 @@ dependencies {
 }
 ```
 
-KiteSSOT is a Gradle plugin, so it goes in the root `plugins` block instead.
+KiteSSOT is a Gradle plugin, so it goes in the root `plugins` block.
 
 ```kotlin
 plugins {
@@ -74,8 +67,8 @@ One Kotlin codebase, Android and iOS, Compose Multiplatform throughout.
 | **[Pingy](https://github.com/yuroyami/PINGY)** | Network ping and latency tester. | <img src="https://img.shields.io/badge/Android%20%C2%B7%20iOS-3DDC84?style=flat-square" alt="Android and iOS"> |
 | **[DuelistLP](https://github.com/yuroyami/DuelistLP)** | Life point counter for two-player Yu-Gi-Oh. | <img src="https://img.shields.io/badge/Android%20%C2%B7%20iOS-3DDC84?style=flat-square" alt="Android and iOS"> |
 
-Peerora, a file transfer app, and Luddy, a torrent and HTTP downloader built on
-KiteTorrent, are not public yet.
+Peerora (file transfer) and Luddy (torrent and HTTP downloader, built on
+KiteTorrent) are not public yet.
 
 <!-- ══════════════════════  CONTACT  ══════════════════════ -->
 
