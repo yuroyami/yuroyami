@@ -3,29 +3,28 @@
   <img width="100%" src="assets/hero-light.svg" alt="yuroyami. Kotlin for everything. Kotlin Multiplatform libraries and apps.">
 </picture>
 
-I work in Kotlin because it reaches every target I care about, iOS and desktop
-included. It runs at native speed there, and almost all of the logic stays
-shared. I think it ends up as the default choice for cross-platform work, and
-the rest stop having a reason to exist.
+I build everything in Kotlin. It targets every platform I care about, iOS and
+desktop included, at native speed. Almost all of the logic stays shared. I
+expect it to become the default way to build cross-platform apps.
 
-The Kite libraries are written in pure Kotlin, and I avoid `expect`/`actual`
-wherever one shared implementation will do:
+The Kite libraries are pure Kotlin. Wherever possible, one shared
+implementation replaces `expect`/`actual`:
 
-- One implementation runs on every target, so behavior does not drift between platforms.
-- Most of them have no native dependency at all: no JNI, no bundled binaries, no third-party libraries. Bugs are mine to fix, not upstream's.
+- The same code runs everywhere, so it behaves the same everywhere.
+- Most libraries depend on nothing: no JNI, no bundled binaries, no third-party code. Every bug is in my code, where I can fix it.
 
-The artifacts stay small. Using one does not mean adopting KMP: an iOS app
-written entirely in Swift or Objective-C can consume a Kite library as a normal
+The artifacts are small, and you do not need a KMP project to use them. A
+plain Swift or Objective-C iOS app can use a Kite library like any other
 framework.
 
 ## 🪁 Kite libraries: 100% pure Kotlin
 
-> No `expect`/`actual` in the core modules, so one code path runs everywhere.
-> KiteCodec and KitePlayer are the exceptions, both built on FFmpeg.
+> The core modules have no `expect`/`actual`: one code path, every platform.
+> The exceptions are KiteCodec and KitePlayer, both built on FFmpeg.
 
 | Library | Purpose | Release | Stars |
 | :--- | :--- | :--- | :--- |
-| **[KitePDF](https://github.com/yuroyami/KitePDF)** | Read, write, edit, and render PDF files. Read EPUB 2 and 3 books. Ships an optional Compose Multiplatform viewer. | [![kitepdf](https://img.shields.io/maven-central/v/io.github.yuroyami/kitepdf?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitepdf) | [![stars](https://img.shields.io/github/stars/yuroyami/KitePDF?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KitePDF/stargazers) |
+| **[KitePDF](https://github.com/yuroyami/KitePDF)** | Read, write, edit, and render PDF files. Read EPUB 2 and 3 books. Includes an optional Compose Multiplatform viewer. | [![kitepdf](https://img.shields.io/maven-central/v/io.github.yuroyami/kitepdf?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitepdf) | [![stars](https://img.shields.io/github/stars/yuroyami/KitePDF?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KitePDF/stargazers) |
 | **[KiteCodec](https://github.com/yuroyami/KiteCodec)** | Wraps FFmpeg through cinterop: demux, decode, filter, encode, transcode, remux. A Gradle plugin fetches the binaries. | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | [![stars](https://img.shields.io/github/stars/yuroyami/KiteCodec?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KiteCodec/stargazers) |
 | **[KitePlayer](https://github.com/yuroyami/KitePlayer)** | Media player on top of FFmpeg. Hardware decode, HDR, subtitles, live streams. No ExoPlayer, AVPlayer, or libmpv underneath. | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | ![stars](https://img.shields.io/badge/%E2%98%85%200-444c56?style=flat-square) |
 | **[KiteCore](https://github.com/yuroyami/KiteCore)** | Cross-platform utilities for text, collections, coroutines, math, and time. | [![kitecore](https://img.shields.io/maven-central/v/io.github.yuroyami/kitecore?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitecore) | [![stars](https://img.shields.io/github/stars/yuroyami/KiteCore?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KiteCore/stargazers) |
@@ -51,7 +50,7 @@ Still being built. The source is public, but there is nothing to depend on yet.
 
 ## 📱 KMP apps
 
-Android and iOS from one codebase, UI included, on Compose Multiplatform.
+One codebase for Android and iOS, UI included, built with Compose Multiplatform.
 
 | App | Purpose | Stars |
 | :--- | :--- | :--- |
