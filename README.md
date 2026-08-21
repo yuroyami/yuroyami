@@ -22,10 +22,7 @@ have no control over.
 You do not even need a KMP project to use them. The libraries are small, and a
 plain Swift or Objective-C iOS app can add one like any other framework.
 
-## 🪁 Kite libraries: 100% pure Kotlin
-
-> The core modules have no `expect`/`actual`: one code path, every platform.
-> The exceptions are KiteCodec and KitePlayer, both built on FFmpeg.
+## 🪁 100% pure Kotlin libraries
 
 | Library | Purpose | Release | Stars |
 | :--- | :--- | :--- | :--- |
