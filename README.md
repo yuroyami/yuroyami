@@ -22,7 +22,7 @@ have no control over.
 You do not even need a KMP project to use them. The libraries are small, and a
 plain Swift or Objective-C iOS app can add one like any other framework.
 
-## 🪁 100% pure Kotlin libraries
+## 🪁 Kite libraries in 100% pure Kotlin
 
 | Library | Purpose | Release | Stars |
 | :--- | :--- | :--- | :--- |
