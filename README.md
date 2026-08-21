@@ -13,7 +13,7 @@ cross-platform apps.
 ## Why I write the Kite libraries
 
 The Kite libraries are written in pure Kotlin, and nearly all of them depend on
-nothing at all: no JNI, no bundled binaries, no third-party code underneath.
+nothing at all: no native code, no bundled binaries, no other library underneath.
 That keeps things predictable. The same code runs on every platform, so it
 behaves the same on every platform. And when something breaks, the bug is in
 the library itself, where I can fix it, not buried in a native dependency I
