@@ -22,43 +22,94 @@ have no control over.
 You do not even need a KMP project to use them. The libraries are small, and a
 plain Swift or Objective-C iOS app can add one like any other framework.
 
-## 🪁 Kite libraries in 100% pure Kotlin
+## Featured
 
-| Library | Purpose | Release | Stars |
-| :--- | :--- | :--- | :--- |
-| **[KitePDF](https://github.com/yuroyami/KitePDF)** | **TL;DR:** Read, write, and display PDFs and EPUB books.<br><br>**What it does:** Open a PDF, grab its text, edit it, or build a new one from scratch. Reads EPUB 2 and 3 too. Want to show pages on screen? A ready-made Compose viewer comes with it. | [![kitepdf](https://img.shields.io/maven-central/v/io.github.yuroyami/kitepdf?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitepdf) | [![stars](https://img.shields.io/github/stars/yuroyami/KitePDF?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KitePDF/stargazers) |
-| **[KiteCodec](https://github.com/yuroyami/KiteCodec)** | **TL;DR:** Convert and edit video and audio files.<br><br>**What it does:** Change format, resize, trim, crop, swap the codec, or drop the audio track. It is FFmpeg, except you call it from Kotlin instead of writing command lines. | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | [![stars](https://img.shields.io/github/stars/yuroyami/KiteCodec?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KiteCodec/stargazers) |
-| **[KitePlayer](https://github.com/yuroyami/KitePlayer)** | **TL;DR:** Play video and audio in your app.<br><br>**What it does:** One player for every platform, behaving the same on all of them. Handles subtitles, live streams, and seeking. | ![source only](https://img.shields.io/badge/source%20only-8a8f98?style=flat-square) | ![stars](https://img.shields.io/badge/%E2%98%85%200-444c56?style=flat-square) |
-| **[KiteCore](https://github.com/yuroyami/KiteCore)** | **TL;DR:** The little helpers you rewrite in every project.<br><br>**What it does:** Around 450 shortcuts for text, lists, dates, math, and coroutines. Plus the few things KMP is missing, like running work off the main thread the same way everywhere. | [![kitecore](https://img.shields.io/maven-central/v/io.github.yuroyami/kitecore?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitecore) | [![stars](https://img.shields.io/github/stars/yuroyami/KiteCore?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KiteCore/stargazers) |
-| **[KiteQR](https://github.com/yuroyami/KiteQR)** | **TL;DR:** Scan and create QR codes and barcodes.<br><br>**What it does:** Reads QR, Aztec, Data Matrix, PDF417, and the usual 1D barcodes out of an image. Creates them as PNG or SVG. Optional Compose UI included. | [![kiteqr](https://img.shields.io/maven-central/v/io.github.yuroyami/kiteqr?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kiteqr) | [![stars](https://img.shields.io/github/stars/yuroyami/KiteQR?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KiteQR/stargazers) |
-| **[KiteImage](https://github.com/yuroyami/KiteImage)** | **TL;DR:** Load and save images without platform code.<br><br>**What it does:** Opens PNG, JPEG, GIF, BMP, TIFF, JPEG 2000, and WebP into pixels you can use in shared code. Animated GIF and WebP work too. Plugs into Compose and Coil. | [![kiteimage](https://img.shields.io/maven-central/v/io.github.yuroyami/kiteimage?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kiteimage) | [![stars](https://img.shields.io/github/stars/yuroyami/KiteImage?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KiteImage/stargazers) |
-| **[KiteArchive](https://github.com/yuroyami/KiteArchive)** | **TL;DR:** Zip and unzip, on any platform.<br><br>**What it does:** Read and write ZIP files, read TAR and older archive formats, and compress with gzip, LZ4, or Snappy. All from shared code. | [![kitearchive](https://img.shields.io/maven-central/v/io.github.yuroyami/kitearchive?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kitearchive) | [![stars](https://img.shields.io/github/stars/yuroyami/KiteArchive?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KiteArchive/stargazers) |
-| **[Kite3D](https://github.com/yuroyami/Kite3D)** | **TL;DR:** 3D math, with three.js's API.<br><br>**What it does:** Vectors, matrices, rotations, colors, and collision shapes. It draws nothing. It only does the math. | [![kite3d](https://img.shields.io/maven-central/v/io.github.yuroyami/kite3d?style=flat-square&label=&color=7F52FF)](https://central.sonatype.com/artifact/io.github.yuroyami/kite3d) | [![stars](https://img.shields.io/github/stars/yuroyami/Kite3D?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/Kite3D/stargazers) |
+<table align="left">
+<tr><td align="center" width="380">
+<br>
+<img src="https://raw.githubusercontent.com/yuroyami/syncplay-mobile/master/iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png" width="72" alt="Synkplay logo"><br><br>
+<b><a href="https://github.com/yuroyami/syncplay-mobile">Synkplay</a></b><br><br>
+<img src="https://img.shields.io/badge/App-7F52FF?style=flat-square" alt="App"> <a href="https://github.com/yuroyami/syncplay-mobile/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/syncplay-mobile?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
+Watch videos in sync with friends, in the same rooms as Syncplay for PC. Android and iOS.
+<br><br>
+</td></tr>
+</table>
 
-### Upcoming
+<table align="right">
+<tr><td align="center" width="380">
+<br>
+<b><a href="https://github.com/yuroyami/KitePDF">KitePDF</a></b><br><br>
+<img src="https://img.shields.io/badge/Library-7F52FF?style=flat-square" alt="Library"> <a href="https://github.com/yuroyami/KitePDF/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KitePDF?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
+Read, write, create, and display PDFs and EPUB books. Pure Kotlin, on Android, iOS, desktop, and web.
+<br><br>
+</td></tr>
+</table>
 
-Still being built. The source is public, but there is nothing to depend on yet.
+<br clear="both">
+
+<table align="left">
+<tr><td align="center" width="380">
+<br>
+<img src="https://raw.githubusercontent.com/yuroyami/KitePlayer/main/art/final/kiteplayer-logo.png" width="72" alt="KitePlayer logo"><br><br>
+<b><a href="https://github.com/yuroyami/KitePlayer">KitePlayer</a></b><br><br>
+<img src="https://img.shields.io/badge/Library-7F52FF?style=flat-square" alt="Library"> <a href="https://github.com/yuroyami/KitePlayer/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KitePlayer?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
+A media player with a 100% Kotlin core, so it plays the same on every platform. Subtitles, live streams, hardware decode.
+<br><br>
+</td></tr>
+</table>
+
+<table align="right">
+<tr><td align="center" width="380">
+<br>
+<b><a href="https://github.com/yuroyami/KiteFFmpeg">KiteFFmpeg</a></b><br><br>
+<img src="https://img.shields.io/badge/Library-7F52FF?style=flat-square" alt="Library"> <a href="https://github.com/yuroyami/KiteFFmpeg/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KiteFFmpeg?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
+FFmpeg as a plain Kotlin dependency: convert, trim, and transcode video and audio. One Gradle line, no NDK, no install.
+<br><br>
+</td></tr>
+</table>
+
+<br clear="both">
+
+<table align="center">
+<tr><td align="center" width="380">
+<br>
+<b><a href="https://github.com/yuroyami/KiteConfig">KiteConfig</a></b><br><br>
+<img src="https://img.shields.io/badge/Gradle%20plugin-7F52FF?style=flat-square" alt="Gradle plugin"> <a href="https://github.com/yuroyami/KiteConfig/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KiteConfig?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
+Set your app name, logo, version, and IDs once, in one Gradle block. Android and iOS both read from it, so they never drift apart.
+<br><br>
+</td></tr>
+</table>
+
+<br clear="both">
+
+## Upcoming Kite libraries
+
+All of these exist and build. None is tested enough to trust yet, so their
+repos stay private. Each one goes public once it proves it works.
 
 | Library | Purpose |
 | :--- | :--- |
-| **[KiteAudio](https://github.com/yuroyami/KiteAudio)** | **TL;DR:** Read, write, and tag audio files.<br><br>**What it does:** Opens FLAC, WAV, AIFF, MP3, and Vorbis. Edit titles, artists, and artwork without touching the audio itself.
-| **[KiteTorrent](https://github.com/yuroyami/KiteTorrent)** | **TL;DR:** Download and seed torrents from shared code.<br><br>**What it does:** Magnet links, peer discovery, encryption, and proxies. Nothing native to ship with your app.
+| **KiteImage** | Load and save images (PNG, JPEG, GIF, WebP, and more) from shared code. |
+| **KiteQR** | Scan and create QR codes and barcodes. |
+| **KiteCore** | The small helpers every project rewrites: text, lists, dates, math, and coroutines. |
+| **KiteArchive** | Zip and unzip anywhere, plus TAR, gzip, LZ4, and Snappy. |
+| **KiteAudio** | Decode, encode, and tag audio files. |
+| **Kite3D** | 3D math: vectors, matrices, quaternions, and collision shapes. |
+| **KiteSynth** | A synthesizer: it reads a SoundFont, takes MIDI notes, and turns them into sound. |
+| **KiteRT** | Real-time audio output. Your code makes the samples, KiteRT gets them to the speakers. |
+| **KiteMIDI** | Read and write MIDI files, and talk to real instruments over USB and Bluetooth. |
+| **KiteTorrent** | Download and seed torrents from shared code: magnet links, encryption, peer discovery. |
 
-## 🔌 Gradle plugin
+## Upcoming apps
 
-| Plugin | Purpose | Release | Stars |
-| :--- | :--- | :--- | :--- |
-| **[KiteSSOT](https://github.com/yuroyami/KiteSSOT)** | **TL;DR:** One place for your app name, version, and IDs.<br><br>**What it does:** Set them once in your root Gradle file. Android and iOS both read from there, so they never fall out of sync. | [![kitessot](https://img.shields.io/gradle-plugin-portal/v/io.github.yuroyami.kitessot?style=flat-square&label=&color=02303A)](https://plugins.gradle.org/plugin/io.github.yuroyami.kitessot) | [![stars](https://img.shields.io/github/stars/yuroyami/KiteSSOT?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/KiteSSOT/stargazers) |
+Bigger things in the works, each one a single Kotlin codebase for every platform.
 
-## 📱 KMP apps
-
-One codebase for Android and iOS, UI included, built with Compose Multiplatform.
-
-| App | Purpose | Stars |
-| :--- | :--- | :--- |
-| **[Synkplay](https://github.com/yuroyami/syncplay-mobile)** | Watch videos in sync with friends. Talks to the same rooms as the Syncplay desktop client. | [![stars](https://img.shields.io/github/stars/yuroyami/syncplay-mobile?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/syncplay-mobile/stargazers) |
-| **[Pingy](https://github.com/yuroyami/PINGY)** | Measure network latency with ping. | [![stars](https://img.shields.io/github/stars/yuroyami/PINGY?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/PINGY/stargazers) |
-| **[DuelistLP](https://github.com/yuroyami/DuelistLP)** | Track life points for two-player Yu-Gi-Oh games. | [![stars](https://img.shields.io/github/stars/yuroyami/DuelistLP?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56)](https://github.com/yuroyami/DuelistLP/stargazers) |
+| App | Purpose |
+| :--- | :--- |
+| **PINGETTO** | Check your network latency with ping. |
+| **Luddy** | One download manager for every screen: torrents and direct links, streamed while they download. |
+| **ChatStrata** | Read the chat backups you download from Facebook, Instagram, Snapchat, and others. |
+| **Peerora** | Send files between your devices. |
 
 <div align="center">
 
