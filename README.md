@@ -7,7 +7,7 @@
 
 Every Kite library is one of two things. Either a full Kotlin port of an
 existing library, like KiteTorrent which ports libtorrent. Or a Kotlin/Native
-cockpit over a native core, like KiteFFmpeg which drives FFmpeg in a
+cockpit over a native core, like [KiteFFmpeg](https://github.com/yuroyami/KiteFFmpeg) which drives FFmpeg in a
 Kotlin-first, coroutine-first way. The goal is to depend on nothing if I can
 help it. No bundled third-party library and no outside API. So when a bug shows
 up it is the Kite library's own bug, and it gets fixed there.
@@ -17,8 +17,8 @@ because there is no expect/actual split underneath, or almost none. Most of
 the code is Kotlin/Native, and sometimes all of it is.
 
 I also want the Kite libraries to fit into the KMP world on the rendering side.
-So wherever it makes sense there are Compose bindings and renderers. KitePDF,
-KitePlayer and Kite3D all have them.
+So wherever it makes sense there are Compose bindings and renderers. [KitePDF](https://github.com/yuroyami/KitePDF),
+[KitePlayer](https://github.com/yuroyami/KitePlayer) and Kite3D all have them.
 
 ## Featured
 
