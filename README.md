@@ -38,7 +38,7 @@ Watch videos in sync with friends, in the same rooms as Syncplay for PC. Android
 <table align="right">
 <tr><td align="center" width="380">
 <br>
-<img src="assets/logos/kitepdf.png" width="72" alt="KitePDF logo"><br><br>
+<img src="assets/logos/kitepdf.svg" width="225" alt="KitePDF logo"><br><br>
 <b><a href="https://github.com/yuroyami/KitePDF">KitePDF</a></b><br><br>
 <img src="https://img.shields.io/badge/Library-7F52FF?style=flat-square" alt="Library"> <a href="https://github.com/yuroyami/KitePDF/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KitePDF?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
 Read, write, create, and display PDFs and EPUB books. Pure Kotlin, on Android, iOS, desktop, and web.
