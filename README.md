@@ -3,11 +3,6 @@
   <img width="100%" src="assets/hero-light.svg" alt="yuroyami. Kotlin for everything.">
 </picture>
 
-I write everything in Kotlin. With Kotlin Multiplatform (KMP), one codebase
-runs on Android, iOS, desktop, and web: you share the logic, and every platform
-still gets native performance. I expect it to become the default way to build
-cross-platform apps.
-
 ## Why I write the Kite libraries
 
 Every Kite library is one of two things. Either a full Kotlin port of an
