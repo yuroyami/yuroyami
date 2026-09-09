@@ -1,9 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img width="100%" src="assets/hero-light.svg" alt="yuroyami. Kotlin for everything. Kotlin Multiplatform libraries and apps.">
+  <img width="100%" src="assets/hero-light.svg" alt="yuroyami. Kotlin for everything.">
 </picture>
-
-## Why I love KMP
 
 I write everything in Kotlin. With Kotlin Multiplatform (KMP), one codebase
 runs on Android, iOS, desktop, and web: you share the logic, and every platform
@@ -12,15 +10,20 @@ cross-platform apps.
 
 ## Why I write the Kite libraries
 
-The Kite libraries are written in pure Kotlin, and nearly all of them depend on
-nothing at all: no native code, no bundled binaries, no other library underneath.
-That keeps things predictable. The same code runs on every platform, so it
-behaves the same on every platform. And when something breaks, the bug is in
-the library itself, where I can fix it, not buried in a native dependency I
-have no control over.
+Every Kite library is one of two things. Either a full Kotlin port of an
+existing library, like KiteTorrent which ports libtorrent. Or a Kotlin/Native
+cockpit over a native core, like KiteFFmpeg which drives FFmpeg in a
+Kotlin-first, coroutine-first way. The goal is to depend on nothing if I can
+help it. No bundled third-party library and no outside API. So when a bug shows
+up it is the Kite library's own bug, and it gets fixed there.
 
-You do not even need a KMP project to use them. The libraries are small, and a
-plain Swift or Objective-C iOS app can add one like any other framework.
+It also means every Kite library behaves exactly the same on every platform,
+because there is no expect/actual split underneath, or almost none. Most of
+the code is Kotlin/Native, and sometimes all of it is.
+
+I also want the Kite libraries to fit into the KMP world on the rendering side.
+So wherever it makes sense there are Compose bindings and renderers. KitePDF,
+KitePlayer and Kite3D all have them.
 
 ## Featured
 

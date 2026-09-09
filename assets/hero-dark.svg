@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 270" role="img" aria-label="yuroyami. Kotlin for everything. Kotlin Multiplatform libraries and apps. Contact email: evongintoki@gmail.com">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 270" role="img" aria-label="yuroyami. Kotlin for everything. Contact email: evongintoki@gmail.com">
   <defs>
     <linearGradient id="hkSky" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#120a22"/>
@@ -70,10 +70,9 @@
       <path d="M880 55 L880 155 M832 105 L928 105" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
       <polygon points="880,55 928,105 880,105" fill="#ffffff" opacity="0.14"/>
     </g>
-    <rect x="90" y="128" width="3" height="84" rx="1.5" fill="url(#hkRule)" opacity="0.95"/>
+    <rect x="90" y="128" width="3" height="64" rx="1.5" fill="url(#hkRule)" opacity="0.95"/>
     <text x="110" y="106" class="hkName">yuroyami</text>
     <text x="110" y="150" class="hkTag">Kotlin for everything</text>
-    <text x="110" y="180" class="hkSub">Kotlin Multiplatform libraries and apps</text>
-    <text x="110" y="208" class="hkMeta">Contact email: <tspan class="hkMail">evongintoki@gmail.com</tspan></text>
+    <text x="110" y="186" class="hkMeta">Contact email: <tspan class="hkMail">evongintoki@gmail.com</tspan></text>
   </g>
 </svg>
