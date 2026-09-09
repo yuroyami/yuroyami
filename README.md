@@ -27,7 +27,7 @@ plain Swift or Objective-C iOS app can add one like any other framework.
 <table align="left">
 <tr><td align="center" width="380">
 <br>
-<img src="assets/logos/synkplay.svg" width="72" alt="Synkplay logo"><br><br>
+<img src="assets/logos/synkplay.png" width="72" height="72" alt="Synkplay logo"><br><br>
 <b><a href="https://github.com/yuroyami/syncplay-mobile">Synkplay</a></b><br><br>
 <img src="https://img.shields.io/badge/App-7F52FF?style=flat-square" alt="App"> <a href="https://github.com/yuroyami/syncplay-mobile/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/syncplay-mobile?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
 Watch videos in sync with friends, in the same rooms as Syncplay for PC. Android and iOS.
