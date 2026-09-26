@@ -5,20 +5,29 @@
 
 ## Why I write the Kite libraries
 
-Every Kite library is one of two things. Either a full Kotlin port of an
-existing library, like KiteTorrent which ports libtorrent. Or a Kotlin/Native
-cockpit over a native core, like [KiteFFmpeg](https://github.com/yuroyami/KiteFFmpeg) which drives FFmpeg in a
-Kotlin-first, coroutine-first way. The goal is to depend on nothing if I can
-help it. No bundled third-party library and no outside API. So when a bug shows
-up it is the Kite library's own bug, and it gets fixed there.
+Kite is my family of Kotlin Multiplatform libraries. Most of them are one of
+two kinds. Some rewrite an existing library in Kotlin, like KiteTorrent does
+with libtorrent. Others put a Kotlin API on top of a native core.
+[KiteFFmpeg](https://github.com/yuroyami/KiteFFmpeg) does this for FFmpeg, so
+you call FFmpeg through suspend functions instead of a command line.
 
-It also means every Kite library behaves exactly the same on every platform,
-because there is no expect/actual split underneath, or almost none. Most of
-the code is Kotlin/Native, and sometimes all of it is.
+Either way, I try to depend on as little as possible, and I aim for zero
+`expect`/`actual` declarations. A Kite library does its own work instead of
+handing it to a platform library, like ExoPlayer on Android or AVPlayer on iOS.
+When it needs native code, that code ships inside the library, so there is
+nothing else to install.
 
-I also want the Kite libraries to fit into the KMP world on the rendering side.
-So wherever it makes sense there are Compose bindings and renderers. [KitePDF](https://github.com/yuroyami/KitePDF),
-[KitePlayer](https://github.com/yuroyami/KitePlayer) and Kite3D all have them.
+This means that when something breaks, the bug is in the library itself, where
+I can fix it. It is not hidden in a platform library that I cannot change. And
+because the same code does the work on every platform, a Kite library behaves
+the same everywhere.
+
+Now that Compose Multiplatform exists, I see no reason to choose Flutter or
+React Native. So I want the libraries to fit into Compose apps, and where it
+makes sense, a library comes with Compose UI.
+[KitePDF](https://github.com/yuroyami/KitePDF) has one composable for every
+document format it opens, and
+[KitePlayer](https://github.com/yuroyami/KitePlayer) has a Compose video view.
 
 ## Featured
 
@@ -28,7 +37,7 @@ So wherever it makes sense there are Compose bindings and renderers. [KitePDF](h
 <img src="assets/logos/synkplay.png" width="72" height="72" alt="Synkplay logo"><br><br>
 <b><a href="https://github.com/yuroyami/syncplay-mobile">Synkplay</a></b><br><br>
 <img src="https://img.shields.io/badge/App-7F52FF?style=flat-square" alt="App"> <a href="https://github.com/yuroyami/syncplay-mobile/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/syncplay-mobile?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
-Watch videos in sync with friends, in the same rooms as Syncplay for PC. Android and iOS.
+Watch videos in sync with friends on Android and iOS. Anyone on a computer can join the same room with Syncplay.
 <br><br>
 </td></tr>
 </table>
@@ -39,7 +48,7 @@ Watch videos in sync with friends, in the same rooms as Syncplay for PC. Android
 <img src="assets/logos/kitepdf.svg" width="225" alt="KitePDF logo"><br><br>
 <b><a href="https://github.com/yuroyami/KitePDF">KitePDF</a></b><br><br>
 <img src="https://img.shields.io/badge/Library-7F52FF?style=flat-square" alt="Library"> <a href="https://github.com/yuroyami/KitePDF/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KitePDF?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
-Read, write, create, and display PDFs and EPUB books. Pure Kotlin, on Android, iOS, desktop, and web.
+Read, create, edit, and display PDFs, and open EPUB books. It is pure Kotlin, so the same code runs on Android, iOS, desktop, and the web.
 <br><br>
 </td></tr>
 </table>
@@ -52,7 +61,7 @@ Read, write, create, and display PDFs and EPUB books. Pure Kotlin, on Android, i
 <img src="assets/logos/kiteplayer.svg" width="72" alt="KitePlayer logo">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/logos/kiteffmpeg.png" width="72" alt="KiteFFmpeg logo"><br><br>
 <b><a href="https://github.com/yuroyami/KitePlayer">KitePlayer</a></b> + <b><a href="https://github.com/yuroyami/KiteFFmpeg">KiteFFmpeg</a></b><br><br>
 <img src="https://img.shields.io/badge/Library-7F52FF?style=flat-square" alt="Library"> <a href="https://github.com/yuroyami/KitePlayer/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KitePlayer?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="KitePlayer stars"></a> <a href="https://github.com/yuroyami/KiteFFmpeg/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KiteFFmpeg?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="KiteFFmpeg stars"></a><br><br>
-Twins. KiteFFmpeg is FFmpeg as a plain Kotlin dependency: convert, trim, and transcode video and audio. One Gradle line, no NDK, no install. KitePlayer is the media player built on it, with a 100% Kotlin core: subtitles, live streams, hardware decode.
+KiteFFmpeg adds FFmpeg to your project as one Gradle dependency, with no NDK and nothing to install. Use it to convert, trim, and transcode video and audio. KitePlayer is a media player built on KiteFFmpeg. Its core is 100% Kotlin, so it plays the same on every platform. It supports subtitles, live streams, and hardware decoding.
 <br><br>
 </td></tr>
 </table>
@@ -63,7 +72,7 @@ Twins. KiteFFmpeg is FFmpeg as a plain Kotlin dependency: convert, trim, and tra
 <img src="assets/logos/kiteconfig.png" width="72" alt="KiteConfig logo"><br><br>
 <b><a href="https://github.com/yuroyami/KiteConfig">KiteConfig</a></b><br><br>
 <img src="https://img.shields.io/badge/Gradle%20plugin-7F52FF?style=flat-square" alt="Gradle plugin"> <a href="https://github.com/yuroyami/KiteConfig/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KiteConfig?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="stars"></a><br><br>
-Set your app name, logo, version, and IDs once, in one Gradle block. Android and iOS both read from it, so they never drift apart.
+Set your app name, icon, version, and IDs once, in one Gradle block. Android, iOS, and desktop all read from it, so they never drift apart.
 <br><br>
 </td></tr>
 </table>
@@ -72,8 +81,9 @@ Set your app name, logo, version, and IDs once, in one Gradle block. Android and
 
 ## Upcoming Kite libraries
 
-All of these exist and build. None is tested enough to trust yet, so their
-repos stay private. Each one goes public once it proves it works.
+These libraries all exist and build, but I have not tested them enough to trust
+them yet. Each one stays private until it proves that it works, and then it
+goes public.
 
 | Library | Purpose |
 | :--- | :--- |
@@ -84,13 +94,13 @@ repos stay private. Each one goes public once it proves it works.
 | **KiteAudio** | Decode, encode, and tag audio files. |
 | **Kite3D** | 3D math: vectors, matrices, quaternions, and collision shapes. |
 | **KiteSynth** | A synthesizer: it reads a SoundFont, takes MIDI notes, and turns them into sound. |
-| **KiteRT** | Real-time audio output. Your code makes the samples, KiteRT gets them to the speakers. |
+| **KiteRT** | Real-time audio output. Your code makes the samples, and KiteRT sends them to the speakers. |
 | **KiteMIDI** | Read and write MIDI files, and talk to real instruments over USB and Bluetooth. |
 | **KiteTorrent** | Download and seed torrents from shared code: magnet links, encryption, peer discovery. |
 
 ## Upcoming apps
 
-Bigger things in the works, each one a single Kotlin codebase for every platform.
+These are the apps I am working on now. Each one runs on every platform from a single Kotlin codebase.
 
 | App | Purpose |
 | :--- | :--- |
