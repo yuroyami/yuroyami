@@ -58,7 +58,7 @@ Read, create, edit, and display PDFs, and open EPUB books. It is pure Kotlin, so
 <table align="left">
 <tr><td align="center" width="380">
 <br>
-<img src="assets/logos/kiteplayer.svg" width="72" alt="KitePlayer logo">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/logos/kiteffmpeg.png" width="72" alt="KiteFFmpeg logo"><br><br>
+<img src="assets/logos/kiteplayer.svg" width="72" alt="KitePlayer logo">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/logos/kiteffmpeg.svg" width="72" height="72" alt="KiteFFmpeg logo"><br><br>
 <b><a href="https://github.com/yuroyami/KitePlayer">KitePlayer</a></b> + <b><a href="https://github.com/yuroyami/KiteFFmpeg">KiteFFmpeg</a></b><br><br>
 <img src="https://img.shields.io/badge/Library-7F52FF?style=flat-square" alt="Library"> <a href="https://github.com/yuroyami/KitePlayer/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KitePlayer?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="KitePlayer stars"></a> <a href="https://github.com/yuroyami/KiteFFmpeg/stargazers"><img src="https://img.shields.io/github/stars/yuroyami/KiteFFmpeg?style=flat-square&label=%E2%98%85&labelColor=444c56&color=444c56" alt="KiteFFmpeg stars"></a><br><br>
 KiteFFmpeg adds FFmpeg to your project as one Gradle dependency, with no NDK and nothing to install. Use it to convert, trim, and transcode video and audio. KitePlayer is a media player built on KiteFFmpeg. Its core is 100% Kotlin, so it plays the same on every platform. It supports subtitles, live streams, and hardware decoding.

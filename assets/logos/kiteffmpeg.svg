@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="kiteffmpeg-logo-title kiteffmpeg-logo-desc" preserveAspectRatio="xMidYMid meet">
+  <title id="kiteffmpeg-logo-title">KiteFFmpeg logo</title>
+  <desc id="kiteffmpeg-logo-desc">A green kite formed by a folded zigzag ribbon, with six alternating maze-like cuts and stepped ends.</desc>
+  <metadata>Independent KiteFFmpeg artwork inspired by the FFmpeg zigzag motif. Original FFmpeg artwork: Herve Flores. Artwork credits: https://github.com/yuroyami/KiteFFmpeg/blob/main/art/CREDITS.md</metadata>
+  <defs>
+    <clipPath id="kite-outline" clipPathUnits="userSpaceOnUse">
+      <path d="M512 72 L880 344 L512 936 L144 344 Z" />
+    </clipPath>
+    <radialGradient id="ffmpeg-green" gradientUnits="userSpaceOnUse" cx="420" cy="135" r="610" gradientTransform="translate(0 15) scale(1 .95)">
+      <stop offset="0" stop-color="#D7EDD9" />
+      <stop offset=".30" stop-color="#65B96B" />
+      <stop offset=".70" stop-color="#0B8B18" />
+      <stop offset="1" stop-color="#007808" />
+    </radialGradient>
+    <path id="ribbon-face" d="M0 0H1024V1024H0Z M-256.000000 205.920000 L517.490957 155.643088 L574.695607 197.924786 L-256.000000 251.920000 Z M1280.000000 236.080000 L312.609143 298.960406 L244.373090 349.395749 L1280.000000 282.080000 Z M-256.000000 465.920000 L770.323428 399.208977 L740.524808 447.145887 L-256.000000 511.920000 Z M1280.000000 496.080000 L351.413604 556.438116 L378.897693 600.651650 L1280.000000 542.080000 Z M-256.000000 725.920000 L601.896446 670.156731 L572.097826 718.093641 L-256.000000 771.920000 Z M1280.000000 756.080000 L506.758454 806.340701 L534.242543 850.554235 L1280.000000 802.080000 Z" fill-rule="evenodd" />
+  </defs>
+  <g transform="translate(0 20)">
+    <g clip-path="url(#kite-outline)">
+      <use href="#ribbon-face" fill="#0B4E29" />
+    </g>
+  </g>
+  <g clip-path="url(#kite-outline)">
+    <use href="#ribbon-face" fill="url(#ffmpeg-green)" />
+  </g>
+</svg>
