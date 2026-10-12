@@ -3,9 +3,8 @@
   <img width="100%" src="assets/hero-light.svg" alt="yuroyami. Kotlin for everything.">
 </picture>
 
-I mostly write Kotlin Multiplatform (KMP) libraries. I keep their dependencies
-to a minimum. I also aim for zero `expect`/`actual` declarations which makes
-commonMain code run the same on every platform.
+I mostly write KMP libraries and aim for zero `expect`/`actual`s, so you get
+commonMain code that runs the same on every platform.
 
 I use AI tools to automate most of my work. I review their output carefully, so
 the quality matches what I would write by hand.
