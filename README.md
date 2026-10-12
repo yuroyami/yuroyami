@@ -3,7 +3,9 @@
   <img width="100%" src="assets/hero-light.svg" alt="yuroyami. Kotlin for everything.">
 </picture>
 
-## Why I write the Kite libraries
+I mostly write Kotlin Multiplatform (KMP) libraries. I keep their dependencies
+to a minimum. I also aim for zero `expect`/`actual` declarations which makes
+commonMain code run the same on every platform.
 
 Kite is my family of Kotlin Multiplatform libraries. Most of them are one of
 two kinds. Some rewrite an existing library in Kotlin, like KiteTorrent does
@@ -11,9 +13,8 @@ with libtorrent. Others put a Kotlin API on top of a native core.
 [KiteFFmpeg](https://github.com/yuroyami/KiteFFmpeg) does this for FFmpeg, so
 you call FFmpeg through suspend functions instead of a command line.
 
-Either way, I try to depend on as little as possible, and I aim for zero
-`expect`/`actual` declarations. A Kite library does its own work instead of
-handing it to a platform library, like ExoPlayer on Android or AVPlayer on iOS.
+Either way, a Kite library does its own work instead of handing it to a
+platform library, like ExoPlayer on Android or AVPlayer on iOS.
 When it needs native code, that code ships inside the library, so there is
 nothing else to install.
 
@@ -28,6 +29,9 @@ makes sense, a library comes with Compose UI.
 [KitePDF](https://github.com/yuroyami/KitePDF) has one composable for every
 document format it opens, and
 [KitePlayer](https://github.com/yuroyami/KitePlayer) has a Compose video view.
+
+I use AI tools to automate most of my work. I review their output carefully, so
+the quality matches what I would write by hand.
 
 ## Featured
 
