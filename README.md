@@ -63,12 +63,8 @@ Set your app name, icon, version, and IDs once, in one Gradle block. Android, iO
 
 ### Kodecs
 
-The Kodec libraries read and write file formats in pure Kotlin, with the same
-code on every platform.
-
-| Library | Purpose |
-| :--- | :--- |
-| **[ImageKodec](https://github.com/yuroyami/ImageKodec)** | Decode and encode images (PNG, JPEG, GIF, WebP, AVIF, JPEG XL, and more), with a Coil adapter for Compose. |
+| **[ImageKodec](https://github.com/yuroyami/ImageKodec)** | **[ArchiveKodec](https://github.com/yuroyami/ArchiveKodec)** | **[AudioKodec](https://github.com/yuroyami/AudioKodec)** |
+| :---: | :---: | :---: |
 
 ### More
 
@@ -88,23 +84,10 @@ goes public.
 | Library | Purpose |
 | :--- | :--- |
 | **KiteQR** | Scan and create QR codes and barcodes. |
-| **ArchiveKodec** | Zip and unzip anywhere, plus TAR, gzip, LZ4, and Snappy. |
-| **AudioKodec** | Decode, encode, and tag audio files. |
 | **KiteSynth** | A synthesizer: it reads a SoundFont, takes MIDI notes, and turns them into sound. |
 | **KiteRT** | Real-time audio output. Your code makes the samples, and KiteRT sends them to the speakers. |
 | **KiteMIDI** | Read and write MIDI files, and talk to real instruments over USB and Bluetooth. |
 | **KiteTorrent** | Download and seed torrents from shared code: magnet links, encryption, peer discovery. |
-
-## Upcoming apps
-
-These are the apps I am working on now. Each one runs on every platform from a single Kotlin codebase.
-
-| App | Purpose |
-| :--- | :--- |
-| **PINGETTO** | Check your network latency with ping. |
-| **Luddy** | One download manager for every screen: torrents and direct links, streamed while they download. |
-| **ChatStrata** | Read the chat backups you download from Facebook, Instagram, Snapchat, and others. |
-| **Peerora** | Send files between your devices. |
 
 <div align="center">
 
