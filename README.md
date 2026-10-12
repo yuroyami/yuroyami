@@ -7,29 +7,6 @@ I mostly write Kotlin Multiplatform (KMP) libraries. I keep their dependencies
 to a minimum. I also aim for zero `expect`/`actual` declarations which makes
 commonMain code run the same on every platform.
 
-Kite is my family of Kotlin Multiplatform libraries. Most of them are one of
-two kinds. Some rewrite an existing library in Kotlin, like KiteTorrent does
-with libtorrent. Others put a Kotlin API on top of a native core.
-[KiteFFmpeg](https://github.com/yuroyami/KiteFFmpeg) does this for FFmpeg, so
-you call FFmpeg through suspend functions instead of a command line.
-
-Either way, a Kite library does its own work instead of handing it to a
-platform library, like ExoPlayer on Android or AVPlayer on iOS.
-When it needs native code, that code ships inside the library, so there is
-nothing else to install.
-
-This means that when something breaks, the bug is in the library itself, where
-I can fix it. It is not hidden in a platform library that I cannot change. And
-because the same code does the work on every platform, a Kite library behaves
-the same everywhere.
-
-Now that Compose Multiplatform exists, I see no reason to choose Flutter or
-React Native. So I want the libraries to fit into Compose apps, and where it
-makes sense, a library comes with Compose UI.
-[KitePDF](https://github.com/yuroyami/KitePDF) has one composable for every
-document format it opens, and
-[KitePlayer](https://github.com/yuroyami/KitePlayer) has a Compose video view.
-
 I use AI tools to automate most of my work. I review their output carefully, so
 the quality matches what I would write by hand.
 
@@ -83,6 +60,26 @@ Set your app name, icon, version, and IDs once, in one Gradle block. Android, iO
 
 <br clear="both">
 
+## Other useful libraries
+
+### Kodecs
+
+The Kodec libraries read and write file formats in pure Kotlin, with the same
+code on every platform.
+
+| Library | Purpose |
+| :--- | :--- |
+| **[ImageKodec](https://github.com/yuroyami/ImageKodec)** | Decode and encode images (PNG, JPEG, GIF, WebP, AVIF, JPEG XL, and more), with a Coil adapter for Compose. |
+
+### More
+
+| Library | Purpose |
+| :--- | :--- |
+| **[KiteJS](https://github.com/yuroyami/KiteJS)** | Run JavaScript from shared code, with Rhino or QuickJS behind one API. |
+| **[KiteCore](https://github.com/yuroyami/KiteCore)** | The small helpers every project rewrites, like `String.format()` and `Dispatchers.IO` in commonMain. |
+| **[Kite3D](https://github.com/yuroyami/Kite3D)** | 3D math: vectors, matrices, quaternions, and bounding volumes, with the same API as three.js. |
+| **[libmpvKt](https://github.com/yuroyami/libmpvKt)** | The mpv player engine for Android, prebuilt, with a typed Kotlin API. |
+
 ## Upcoming Kite libraries
 
 These libraries all exist and build, but I have not tested them enough to trust
@@ -91,12 +88,9 @@ goes public.
 
 | Library | Purpose |
 | :--- | :--- |
-| **KiteImage** | Load and save images (PNG, JPEG, GIF, WebP, and more) from shared code. |
 | **KiteQR** | Scan and create QR codes and barcodes. |
-| **KiteCore** | The small helpers every project rewrites: text, lists, dates, math, and coroutines. |
-| **KiteArchive** | Zip and unzip anywhere, plus TAR, gzip, LZ4, and Snappy. |
-| **KiteAudio** | Decode, encode, and tag audio files. |
-| **Kite3D** | 3D math: vectors, matrices, quaternions, and collision shapes. |
+| **ArchiveKodec** | Zip and unzip anywhere, plus TAR, gzip, LZ4, and Snappy. |
+| **AudioKodec** | Decode, encode, and tag audio files. |
 | **KiteSynth** | A synthesizer: it reads a SoundFont, takes MIDI notes, and turns them into sound. |
 | **KiteRT** | Real-time audio output. Your code makes the samples, and KiteRT sends them to the speakers. |
 | **KiteMIDI** | Read and write MIDI files, and talk to real instruments over USB and Bluetooth. |
