@@ -77,10 +77,6 @@ Set your app name, icon, version, and IDs once, in one Gradle block. Android, iO
 
 ## Upcoming Kite libraries
 
-These libraries all exist and build, but I have not tested them enough to trust
-them yet. Each one stays private until it proves that it works, and then it
-goes public.
-
 | Library | Purpose |
 | :--- | :--- |
 | **KiteQR** | Scan and create QR codes and barcodes. |
